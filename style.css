@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')center/cover no-repeat fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.box-container{
+    width: 1000px;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+h2{
+    color: rgb(255, 60, 0);
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+h1{
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 100px;
+}
+.box{
+    border: 2px solid white;
+    border-radius: 8px;
+    position: relative;
+}
+#img{
+    width: 170px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    transform: translateX(-85px);
+}
+h3{
+    font-size: 30px;
+    margin-top: 80px;
+}
+p{
+    margin: 0 20px;
+}
+i{
+    color: rgb(255, 60, 0);
+}
+.fa-quote-left{
+    font-size: 60px;
+}
+.fa-chevron-left, .fa-chevron-right{
+    border: 1px solid;
+    padding: 15px;
+    font-size: 26px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+.fa-chevron-left:hover, .fa-chevron-right:hover{
+    background-color: rgb(255, 60, 0);
+    color: white;
+    border: 1px solid rgb(255, 60, 0);
+    transition-duration: .3s;
+}
+.fa-chevron-left{
+    left: 0;
+    top: 50%;
+    transform: translate(-115%, -50%);
+}
+.fa-chevron-right{
+    right: 0;
+    top:50%;
+    transform: translate(115%, -50%)
+}
+
+@media screen and (max-width: 1200px) {
+    .box-container{
+        width: 700px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .box-container{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 610px) {
+    .box-container{
+        width: 350px;
+    }
+    p{
+        margin: 0 10px;
+    }
+    .fa-chevron-left, .fa-chevron-right{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .box-container{
+        width: 220px;
+    }
+    p{
+        margin: 0;
+    }
+}
